@@ -61,6 +61,7 @@ body, .item-cards{
 }
 
 .hero-section{
+    flex-wrap: wrap;
     margin-bottom: 75px;
     color: rgb(191, 191, 191);
     display: flex;
@@ -68,7 +69,7 @@ body, .item-cards{
 }
 
 .hero-text{
-    flex-basis: 40vw;
+    flex-basis: 20vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -82,12 +83,14 @@ body, .item-cards{
 }
 
 .hero-image{
+    margin-top: 30px;
     border-radius: 18px;
     background-image: url('./images/hero.jpg');
     background-size:cover;
     background-position: center center;
     height: 250px;
-    width: 50vw;
+    flex-basis: 40vw;
+    min-width: 20vw;
 }
 
 .signup-button{
@@ -113,6 +116,9 @@ body, .item-cards{
 }
 
 .block-two-item-list{
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
     margin-bottom: 50px;
     display: flex;
     flex-direction: row;
@@ -156,6 +162,7 @@ border: 4px solid #3882F6;
 }
 
 .call-to-action-card{
+    flex-wrap: wrap;
     margin: 100px 0px;
     border-radius: 8px;
     padding: 40px 90px;
